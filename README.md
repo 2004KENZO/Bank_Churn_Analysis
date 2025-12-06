@@ -1,63 +1,70 @@
-# 🏦 Bank Customer Churn Prediction  
+🏦 Bank Customer Churn Prediction
+📘 Overview
 
-### 📘 Overview  
-This project predicts whether a customer will **churn (leave the bank)** using demographic and account activity data.  
-It demonstrates an **end-to-end data analytics and machine learning workflow**, including data cleaning, EDA, model training, and insight visualization.  
+This project focuses on predicting whether a bank customer is likely to churn (leave the bank) using demographic details and account activity data.
+It demonstrates an end-to-end machine learning workflow, including data preprocessing, exploratory data analysis (EDA), model development, evaluation, and insights generation.
 
-The goal is to help banks identify at-risk customers early and design retention strategies.
+The objective is to help financial institutions identify customers at risk and design effective retention strategies.
 
----
 
-## 🚀 Project Workflow  
+README
 
-| Step | Description |
-|------|--------------|
-| **1. Data Loading & Understanding** | Loaded the dataset of 10,000+ bank customers from Kaggle. |
-| **2. Data Cleaning & Preprocessing** | Handled missing values, encoded categorical variables, and standardized numeric features. |
-| **3. Exploratory Data Analysis (EDA)** | Visualized churn distribution, geography-wise churn, and correlations using Seaborn & Matplotlib. |
-| **4. Model Building** | Trained Logistic Regression and Random Forest classifiers to predict churn. |
-| **5. Model Evaluation** | Compared models using accuracy, recall, precision, F1-score, and ROC-AUC. |
-| **6. Insights & Visualization** | Highlighted key churn drivers and created a Power BI dashboard for business interpretation. |
+🚀 Project Workflow
+Step	Summary
+1. Data Loading & Exploration	Imported a dataset of 10,000 customers obtained from Kaggle and examined feature distributions.
+2. Data Cleaning & Preprocessing	Handled missing values, encoded categorical variables, and standardized numerical fields.
+3. Exploratory Data Analysis (EDA)	Visualized churn patterns, geography-wise behavior, and feature correlations using Seaborn & Matplotlib.
+4. Model Building	Developed Logistic Regression and Random Forest models to classify churn.
+5. Model Evaluation	Assessed models using accuracy, precision, recall, F1-score, and ROC-AUC.
+6. Business Insights & Visualization	Identified key churn indicators and built a Power BI dashboard for decision-making.
+🧠 Machine Learning Models
+Model	Accuracy	ROC-AUC	Recall (Churn=1)	Notes
+Logistic Regression	81%	0.58	0.20	Baseline model for comparison
+Random Forest	87%	0.72	0.48	Best performance; captures non-linear relationships effectively
+📊 Key Insights
 
----
+Geography: German customers had the highest churn rate.
 
-## 🧠 Machine Learning Models  
-| Model | Accuracy | ROC-AUC | Recall (Churn=1) | Comments |
-|--------|-----------|----------|------------------|-----------|
-| Logistic Regression | 81% | 0.58 | 0.20 | Baseline linear model |
-| Random Forest | 87% | 0.72 | 0.48 | Best performance; captures non-linear relationships |
+Tenure: Shorter-tenure customers were more likely to leave.
 
----
+Account Activity: Inactive users showed significantly higher churn risk.
 
-## 📊 Key Insights  
+Credit Score: Lower credit scores were associated with increased churn probability.
 
-- **Geography:** Customers from Germany had the highest churn rate.  
-- **Tenure:** Customers with shorter tenure were more likely to churn.  
-- **Activity Level:** Inactive customers showed significantly higher churn probability.  
-- **Credit Score:** Lower credit scores correlated with higher churn rates.  
+🧰 Tech Stack
 
----
+Programming & Libraries:
 
-## 🧰 Tech Stack  
+Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib)
 
-**Languages & Libraries:**  
-- Python (Pandas, NumPy, scikit-learn, Seaborn, Matplotlib)  
-- Power BI (for visualization)  
+Tools Used:
 
-**Tools:**  
-- Google Colab (for implementation)  
-- Kaggle (for dataset)  
+Google Colab
 
----
+Power BI
 
-## 📈 Results Summary  
+Kaggle Dataset Platform
 
-- Achieved **87% accuracy** and **0.72 ROC-AUC** using Random Forest.  
-- Identified key churn drivers influencing customer retention.  
-- Created a Power BI dashboard to support **data-driven retention strategies**.  
+📈 Results
 
-## 📎 Dataset  
-**Source:** [Kaggle - Bank Customer Churn Dataset](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers)  
-**Rows:** 10,000  
-**Target:** `Exited` (1 = churned, 0 = retained)
+The Random Forest model achieved 87% accuracy and 0.72 ROC-AUC, making it the best-performing model.
 
+Identified strong churn drivers that can assist banks in creating targeted retention strategies.
+
+Designed a Power BI dashboard for intuitive visualization and business understanding.
+
+📎 Dataset Information
+
+Source: Kaggle – Bank Customer Churn Dataset
+
+Records: 10,000
+
+Target Variable: Exited
+
+1 = Churned
+
+0 = Retained
+
+🙌 Credits
+
+Project enhanced and documented with contributions from Hitesh Kumar.
