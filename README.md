@@ -63,3 +63,6 @@ The goal is to help banks identify at-risk customers early and design retention 
 **Rows:** 10,000  
 **Target:** `Exited` (1 = churned, 0 = retained)
 
+## 📎 Credit  
+Project concept, implementation, and documentation by Hitesh Kumar.
+
